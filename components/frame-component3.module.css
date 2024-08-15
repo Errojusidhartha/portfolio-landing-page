@@ -1,0 +1,55 @@
+.uiux {
+  position: relative;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  min-width: 69px;
+}
+.uiuxWrapper {
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-100);
+  border: 0.4px solid var(--color-dimgray);
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) var(--padding-lgi);
+}
+.frameParent,
+.projectExamples {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.projectExamples {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-25xl);
+}
+.frameParent {
+  width: 1423px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-87xl);
+  text-align: center;
+  font-size: var(--small-heading-24-size);
+  color: var(--color-black);
+  font-family: var(--nav-bar-text-21);
+}
+@media screen and (max-width: 950px) {
+  .projectExamples {
+    gap: var(--gap-3xl);
+  }
+  .frameParent {
+    gap: var(--gap-34xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .uiux {
+    font-size: var(--sub-p-19-size);
+  }
+  .frameParent {
+    gap: var(--gap-7xl);
+  }
+}
